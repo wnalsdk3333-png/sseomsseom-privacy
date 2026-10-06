@@ -4,57 +4,77 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>씀씀이 개인정보 처리방침</title>
 <style>
-  :root { --panel:#d9d2c6; --ink:#18181B; --ink2:#55555A; --recess:#c9c2b5; }
-  @media (prefers-color-scheme: dark) {
-    :root { --panel:#262320; --ink:#E8E8EA; --ink2:#A0A0A6; --recess:#332F2B; }
+  :root {
+    color-scheme: light dark;
+    --panel:#CFE9FA; --card:#FFF7EE; --ink:#141018; --ink2:#46414C;
+    --outline:#141018; --line:#141018;
   }
-  * { box-sizing: border-box; }
-  body { margin:0; padding:32px 20px 80px; background:var(--panel); color:var(--ink);
-         font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
-         line-height:1.75; -webkit-text-size-adjust:100%; }
-  main { max-width:640px; margin:0 auto; }
-  h1 { font-size:28px; margin:0 0 8px; letter-spacing:-0.02em; }
-  h2 { font-size:20px; margin:40px 0 12px; letter-spacing:-0.01em; }
-  h3 { font-size:17px; margin:28px 0 8px; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --panel:#18181B; --card:#303036; --ink:#F4F1EA; --ink2:#CAC7CF;
+      --outline:#000000; --line:#A3A1AA;
+    }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:32px 24px 80px; background:var(--panel); color:var(--ink);
+         font-family:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,
+                     "Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+         font-size:16px; font-weight:500; line-height:1.7; word-break:keep-all;
+         -webkit-text-size-adjust:100%; }
+  main { max-width:640px; margin:0 auto; display:flex; flex-direction:column; gap:32px; }
+  header { padding:8px 0 0; }
+  h1 { font-size:34px; font-weight:900; letter-spacing:-0.8px; line-height:1.25; margin:0 0 8px; }
+  .meta { font-size:14px; font-weight:700; color:var(--ink2); margin:0; }
+  section { background:var(--card); border:3px solid var(--outline); border-radius:20px;
+            padding:24px; }
+  h2 { font-size:26px; font-weight:900; letter-spacing:-0.5px; line-height:1.3; margin:0 0 12px; }
+  h3 { font-size:17px; font-weight:700; letter-spacing:-0.2px; margin:28px 0 8px; }
   p { margin:12px 0; }
-  hr { border:0; border-top:1px solid var(--recess); margin:32px 0; }
-  code { background:var(--recess); padding:1px 5px; border-radius:3px; font-size:0.92em; }
-  ul { padding-left:20px; }
+  section > :last-child { margin-bottom:0; }
+  section > h2 + p, section > h2 + ul, section > h2 + table { margin-top:0; }
+  strong { font-weight:900; }
+  ul { padding-left:20px; margin:12px 0; }
   li { margin:6px 0; }
-  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:15px; }
-  th,td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--recess); vertical-align:top; }
-  th { color:var(--ink2); font-weight:500; }
+  code { font-family:inherit; font-size:14px; font-weight:700; white-space:nowrap;
+         padding:1px 8px; border:2px solid var(--line); border-radius:999px; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; }
+  th, td { text-align:left; vertical-align:top; padding:10px 8px 10px 0;
+           border-bottom:2px solid var(--line); }
+  tr:last-child td { border-bottom:0; }
+  th { font-size:14px; font-weight:700; color:var(--ink2); }
+  td:first-child { font-weight:700; width:38%; }
   a { color:var(--ink); }
-  strong { font-weight:600; }
 </style></head>
 <body><main>
+<header>
 <h1>개인정보 처리방침</h1>
-<p><strong>씀씀이</strong> · 최종 수정 2026년 8월 19일</p>
-<hr>
+<p class="meta"><strong>씀씀이</strong> · 최종 수정 2026년 10월 6일</p>
+</header>
+<section>
 <h2>한 줄 요약</h2>
-<p><strong>씀씀이는 개인정보를 수집하지 않습니다.</strong> 계정이 없고, 기록은 이 앱을 깐 기기 밖으로 나가지 않습니다. 앱이 하는 네트워크 요청은 <strong>업데이트 확인 하나</strong>뿐입니다(아래 「앱 업데이트」).</p>
-<hr>
+<p><strong>씀씀이는 이름·연락처 같은 개인정보를 받지 않습니다.</strong> 계정이 없고, 기록은 이 앱을 깐 기기 밖으로 나가지 않습니다. 앱을 고치는 데 참고하려고 <strong>사용 통계</strong>를 보내며, 설정에서 끌 수 있습니다(아래 「사용 통계」).</p>
+</section>
+<section>
 <h2>수집하는 정보</h2>
-<p><strong>없습니다.</strong></p>
-<ul><li>회원가입이 없습니다. 이메일·이름·전화번호를 묻지 않습니다.</li><li>분석 도구를 넣지 않았습니다. 어느 화면을 봤는지, 언제 열었는지를 아무도 모릅니다.</li><li>광고가 없습니다. 광고 식별자를 읽지 않습니다.</li><li>위치·연락처·사진·캘린더에 접근하지 않습니다.</li></ul>
+<ul><li>회원가입이 없습니다. 이메일·이름·전화번호를 묻지 않습니다.</li><li>광고가 없습니다. 광고 식별자를 읽지 않습니다.</li><li>위치·연락처·사진·캘린더에 접근하지 않습니다.</li><li>사용 통계를 보냅니다. 무엇이 나가는지는 아래 「사용 통계」에 전부 적었습니다.</li></ul>
+</section>
+<section>
 <h2>기기에 저장되는 것</h2>
-<p>앱에 남긴 기록은 <strong>기기 안의 파일 하나</strong>에 저장됩니다.</p>
-<table>
-<tr><th>무엇</th><th>예</th></tr>
-<tr><td>소비 이름</td><td><code>편의점 아아</code></td></tr>
-<tr><td>어떤 소비였는지 (선택)</td><td><code>매일 마시는</code></td></tr>
-<tr><td>크기</td><td><code>커피 한 잔</code> · <code>한 끼</code> · <code>하루 숙박</code> · <code>월세</code> 중 하나</td></tr>
-<tr><td>나랑 맞았는지</td><td>맞음 / 안 맞음</td></tr>
-<tr><td>소비가 없었던 날의 상황과 기분</td><td><code>집에 있었음</code> · <code>괜찮았어요</code></td></tr>
-<tr><td>알림 시각 설정</td><td><code>오후 9:00</code></td></tr>
-</table>
+<p>앱에 남긴 것은 <strong>기기 안의 파일 하나</strong>에 저장됩니다.</p>
+<ul><li><strong>기록</strong> — 소비 이름, 메모, 카테고리, 크기, 할인·적립 여부, 나랑 맞았는지, 소비가 없었던 날의 상황과 기분 같은 것</li><li><strong>설정</strong> — 알림 시각, 사용 통계를 보낼지, 설치 번호(아래 「사용 통계」) 같은 것</li></ul>
 <p><strong>정확한 금액을 받지 않습니다.</strong> 이 앱은 얼마를 썼는지 묻지 않고, 그래서 갖고 있지도 않습니다.</p>
 <p>이 파일은 앱 전용 저장 공간에 있어 다른 앱이 읽을 수 없습니다. <strong>앱을 지우면 함께 지워집니다.</strong></p>
+</section>
+<section>
 <h2>백업</h2>
 <p>휴대폰이 기기를 백업할 때 이 파일이 함께 포함될 수 있습니다 — 안드로이드는 Google Drive, 아이폰은 iCloud입니다. 이는 <strong>휴대폰 제조사·운영체제와 사용자 사이의 일</strong>이며 씀씀이는 관여하지 않고, 백업 내용을 열어볼 수도 없습니다. 백업을 켜고 끄는 것은 휴대폰 설정에서 합니다.</p>
+</section>
+<section>
 <h2>알림</h2>
 <p>알림은 <strong>전부 기기 안에서 만들어집니다</strong>(로컬 알림). 원격 푸시를 쓰지 않으므로 푸시 토큰이 없고, 사용자가 무엇을 언제 기록했는지 서버가 알 방법이 없습니다.</p>
 <p>알림 권한은 거부해도 됩니다. 거부해도 앱의 모든 기능이 동작합니다.</p>
+</section>
+<section>
 <h2>앱 업데이트</h2>
 <p>앱을 열 때 <strong>새 버전이 있는지 확인</strong>합니다. 이때 나가는 것은 다음 셋뿐입니다.</p>
 <table>
@@ -65,14 +85,65 @@
 </table>
 <p><strong>기록은 보내지 않습니다.</strong> 소비 이름도, 크기도, 답도, 무지출 기록도 나가지 않습니다. 계정이 없으므로 이 요청이 누구의 것인지 알 수 없고, 저장되지도 않습니다 — 무엇을 내려줄지 고르는 데만 쓰입니다.</p>
 <p>이 확인은 <strong>앱을 고쳤을 때 스토어 심사를 기다리지 않고 고친 것을 보내기 위한 것</strong>입니다.</p>
+</section>
+<section>
+<h2>사용 통계</h2>
+<p>사람들이 씀씀이를 계속 쓰는지, 다시 묻는 질문에 답을 하는지 알기 위해 분석 서비스 <strong>PostHog</strong>로 사용 통계를 보냅니다.</p>
+<h3>보내는 것</h3>
+<p><strong>앱이 미리 정해 둔 값과 숫자만 보냅니다.</strong> 사용자가 직접 쓴 글자는 어떤 경우에도 보내지 않습니다.</p>
+<table>
+<tr><th>종류</th><th>예</th></tr>
+<tr><td>앱을 어떻게 쓰는지</td><td>앱을 열었는지, 어느 화면을 봤는지, 기록을 남겼는지, 질문에 답했는지와 그 횟수</td></tr>
+<tr><td>기록의 겉모양</td><td>소비의 크기 단계, 메모·카테고리를 채웠는지, 쌓인 기록 수, 설치하고 며칠째인지</td></tr>
+<tr><td>설치 번호와 기본 정보</td><td>앱이 만든 무작위 설치 번호, 앱 버전, 휴대폰 OS 버전</td></tr>
+</table>
+<p>설치 번호는 기기 ID가 아닙니다. 앱을 지우면 함께 지워지고, 다시 깔면 새 번호가 됩니다.</p>
+<h3>보내지 않는 것</h3>
+<ul><li><strong>직접 쓴 글자.</strong> 소비 이름, 메모, 직접 만든 카테고리 이름.</li><li><strong>답과 기분.</strong> 소비가 나랑 맞았는지, 소비가 없었던 날의 상황과 기분.</li><li><strong>발견의 내용.</strong> 발견이 생겼다는 사실만 셉니다.</li><li><strong>기기나 사람을 알아보는 값.</strong> 기기 ID, 광고 ID, 전화번호, 이메일.</li><li><strong>위치.</strong> 위치 권한을 쓰지 않고, 인터넷 주소(IP)로 지역을 추정하는 기능도 꺼 두었습니다. IP 주소는 저장하지 않도록 설정해 두었습니다.</li></ul>
+<p>통계는 광고에 쓰지 않습니다.</p>
+<h3>언제부터 보내나</h3>
+<p>이 기능이 들어간 업데이트 뒤 처음 앱을 열면 <strong>먼저 알리는 화면</strong>이 뜹니다. 그 화면을 넘기기 전에는 아무것도 보내지 않습니다.</p>
+<h3>끄는 법</h3>
+<p><strong>설정 → 사용 통계 보내기</strong>를 끄면 그때부터 아무것도 보내지 않습니다. 처음 알리는 화면에서 <code>보내지 않을래요</code>를 눌러도 같습니다. 꺼도 앱의 모든 기능이 똑같이 동작합니다.</p>
+<h3>보관 기간</h3>
+<p>PostHog에 쌓인 통계는 <strong>1년</strong>이 지나면 지워집니다.</p>
+</section>
+<section>
+<h2>국외 이전</h2>
+<p>사용 통계는 PostHog의 유럽 서버로 보내져 처리됩니다.</p>
+<table>
+<tr><th>항목</th><th>내용</th></tr>
+<tr><td>이전받는 자</td><td>PostHog Inc. (2261 Market Street #4008, San Francisco, CA 94114, USA · privacy@posthog.com)</td></tr>
+<tr><td>이전되는 국가</td><td>독일 (PostHog EU 클라우드, 프랑크푸르트)</td></tr>
+<tr><td>이전되는 항목</td><td>위 「사용 통계 · 보내는 것」의 세 종류</td></tr>
+<tr><td>이전 시기와 방법</td><td>앱을 쓰는 동안 인터넷으로 수시로 보냄</td></tr>
+<tr><td>목적</td><td>앱 사용 현황 분석과 개선</td></tr>
+<tr><td>보유 기간</td><td>위 「보관 기간」</td></tr>
+<tr><td>거부하는 법과 그 결과</td><td>설정에서 사용 통계를 끄면 보내지 않습니다. 꺼도 쓸 수 없게 되는 기능은 없습니다</td></tr>
+</table>
+</section>
+<section>
 <h2>제3자 제공</h2>
-<p><strong>없습니다.</strong> 데이터를 수집하지 않으므로 제공할 것이 없습니다. 위 업데이트 확인은 앱 배포에 쓰는 Expo 서비스로 가며, 거기에도 사용자를 알아볼 수 있는 값은 가지 않습니다.</p>
+<p><strong>없습니다.</strong> 위 국외 이전은 분석을 맡긴 것이고, PostHog는 이 통계를 씀씀이를 위해서만 처리합니다.</p>
+<p>외부로 나가는 요청은 둘입니다. 업데이트 확인은 앱 배포에 쓰는 <strong>Expo</strong>로, 사용 통계는 <strong>PostHog</strong>로 갑니다.</p>
+</section>
+<section>
 <h2>아동</h2>
-<p>만 14세 미만을 대상으로 하지 않으며, 나이를 포함해 어떤 개인정보도 수집하지 않습니다.</p>
+<p>만 14세 미만을 대상으로 하지 않으며, 나이를 묻지 않습니다.</p>
+</section>
+<section>
 <h2>사용자의 권리</h2>
-<p>수집하는 정보가 없으므로 열람·정정·삭제를 요청할 대상이 없습니다. <strong>기기의 기록을 지우려면 앱을 삭제하면 됩니다.</strong></p>
+<p>통계를 보내고 싶지 않으면 <strong>설정에서 사용 통계를 끄면 됩니다.</strong></p>
+<p>이미 보낸 통계는 무작위 설치 번호로만 묶여 있어 저희가 특정한 사람의 것을 찾아낼 수 없습니다. 지우고 싶다면 아래 문의 메일로 알려 주세요. 방법을 함께 찾겠습니다.</p>
+<p><strong>기기의 기록을 지우려면 앱을 삭제하면 됩니다.</strong></p>
+</section>
+<section>
 <h2>변경</h2>
-<p>이 방침이 바뀌면 이 문서를 고치고 최종 수정일을 갱신합니다. 수집 항목이 생기는 변경이라면 <strong>앱 안에서 먼저 알립니다.</strong></p>
+<p>이 방침이 바뀌면 이 문서를 고치고 최종 수정일을 갱신합니다.</p>
+<p><strong>보내는 것의 종류가 늘어나면</strong> — 위 「보내는 것」 표에 새 줄이 생기면 — <strong>앱 안에서 먼저 알립니다.</strong> 같은 종류 안에서 세는 것이 늘거나 줄 때(예: 새 화면을 연 횟수를 세기 시작할 때)는 따로 알리지 않습니다. 「보내지 않는 것」은 바뀌지 않습니다.</p>
+</section>
+<section>
 <h2>문의</h2>
 <p>wnalsdk3333@gmail.com</p>
+</section>
 </main></body></html>
